@@ -24,3 +24,5 @@ Then I will be ready to start my first project.
 #########################################################
 
 ![alt text](img/img1.png)
+
+![alt text](img/img2.png)
