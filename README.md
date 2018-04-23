@@ -1,5 +1,4 @@
-#My plan to learn JS in 2018#
-(using nodeschool.io and codewars)
+#My plan to advance in JS in 2018#
 
 My plan is to grow some JS muscle before I start my first small project.
 
@@ -20,5 +19,9 @@ Things to read before sleep:
 - Java Script ultimate guide small subject a day
 
 
+Then I will be ready to start my first project.
+
+#########################################################
+
 Things I've done:
-![alt text](https://github.com/ertogrul/JSway/1.JPEG)
+![alt text](https://github.com/ertogrul/JSway/img1.JPEG)
