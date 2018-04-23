@@ -23,5 +23,4 @@ Then I will be ready to start my first project.
 
 #########################################################
 
-Things I've done:
 ![alt text](https://github.com/ertogrul/JSway/img1.jpg)
