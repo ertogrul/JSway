@@ -1,0 +1,2 @@
+Hello ${user.username}
+Hello ${user.username}!Hello michal.kordyzon@pl.ibm.com!Hello michal.kordyzon@pl.ibm.com!Hello michal.kordyzon@pl.ibm.com!Hello michal.kordyzon@pl.ibm.com!Hello michal.kordyzon@pl.ibm.com!Hello michal.kordyzon@pl.ibm.com!Hello michal.kordyzon@pl.ibm.com! You are 25.
