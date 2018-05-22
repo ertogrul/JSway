@@ -1,18 +1,26 @@
-console.log("Starting notes.js");
+console.log('Starting notes.js');
 
-module.exports.age = 25;
+var addNote = (title, body) => {
+	console.log('Adding note', title, body);
+};
 
-//shows module object;
-//console.log(module);
+var getAll = () => {
+	console.log('getting all notes');
+};
 
-module.exports.addNote  = () => {
-	console.log("addNote");
-	return 'New note';
+var getNote = (title) => {
+	console.log('reading title:', title);
+};
+
+var removeNote = (title) => {
+	console.log('removing title:', title);
+};
+
+//create getNote function that takes the title
+
+module.exports = {
+	addNote,         // 'addNote' is identical to 'addNote: addNote', the same thing applies to other lines
+	getAll,
+	getNote,
+	removeNote
 }
-
-module.exports.Add = (parA, parB) => {
-	console.log("Add started");
-	return parA + parB
-}
-
-console.log(module);

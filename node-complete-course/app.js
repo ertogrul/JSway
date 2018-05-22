@@ -1,36 +1,29 @@
 console.log('Starting app.js');
 
 const fs = require('fs');
-const os = require('os');
-const notes = require('./notes.js');
 const _ = require('lodash');
+const yargs = require('yargs');
 
-var filteredArray = _.uniq(['Andrew', 1, 'Andrew', 1, 2, 3, 4]);
-console.log(filteredArray);
+const notes = require('./notes.js');
+const argv = yargs.argv;
 
-/*
-console.log(_.isString(true));
-console.log(_.isString("Andrew"));
-*/
-/*
-var res = notes.addNote();
-console.log(res);
-console.log("result2 is " + notes.Add(14, -5));
-*/
-/* add function
-two arguments A, B
-add them
-return result
-call that function from app passing two arguments
-*/
-/*
-var user = os.userInfo();
-console.log(`Hello ${user.username}! You are ${notes.age}.`); 
-fs.appendFileSync('greetings3.txt', `Hello ${user.username}! You are ${notes.age}.`); 
-//console.log(global);
-*/
+var command = process.argv[2];
+//console.log ('Command: ', command);
+//console.log ('Process: ', process.argv);
+console.log ('Yargs: ', argv);
 
+var command = argv._[0];
 
-
-
-
+if (command === 'add') {
+	notes.addNote(argv.title, argv.body);
+	console.log('Adding new note');
+} else if (command === 'list') {
+	notes.getAll();
+} else if (command === 'read') {
+	notes.getNote(argv.title);
+} else if (command === 'remove') {
+	notes.removeNote(argv.title)
+	//console.log('removin...')
+} else {
+	console.log('Command not recognized');
+}
